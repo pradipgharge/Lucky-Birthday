@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height:100%;
+}
+.container{
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+    min-height: 90vh;
+
+}
+
+.label{
+    display:block;
+   
+    
+
+}
+
+input{
+    margin-bottom: 0.5rem;
+}
+
+#btn-check{
+    display: block;
+    margin:0.5rem auto;
+}
+
