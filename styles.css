@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -5,29 +7,94 @@
 }
 
 body{
-    height:100%;
+    font-family: 'Open Sans', sans-serif;
+    height:100vh;
+    background:url(/images/bdaypic5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
 .container{
     text-align: center;
-    margin: 0 auto;
-    padding: 1rem;
-    min-height: 90vh;
-
+    margin: 2rem auto;
+    max-width: 600px;
+    padding: 1.5rem;
+    max-height: 100vh;
+    background-color:rgb(208, 252, 252);
+    opacity: 0.9;
 }
+
+
+.heading{
+    padding: 1rem;
+}
+
+.hero-img{
+    max-width: 250px;
+    display: block;
+    margin: auto;
+    padding: 0.5rem;
+}
+  
 
 .label{
     display:block;
-   
-    
-
+    padding: 0.5rem;
 }
 
 input{
+    padding: 0.5rem;
+    min-width: 240px;
     margin-bottom: 0.5rem;
+    border-radius: 0.2rem;
+    border: 1px solid black;
 }
+
 
 #btn-check{
     display: block;
-    margin:0.5rem auto;
+    margin:1rem auto;
+    padding: 0.7rem 1.5rem;
+    border-radius: 1rem;
+    border: none;
+    text-align: center;
+    background-color: #02523b;
+    color:white;
+    cursor: pointer;
+}
+
+#error-message{
+    color:rgb(199, 54, 54); 
+}
+
+.output-div{
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 450px;
+    border: 1px solid black;
+    background-color: white;
+    
+}
+
+.footer{
+    margin-top: 3rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer-list{
+    padding: 0.5rem;
+}
+
+.list-item{
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
+}
+
+.links{
+    color: black;
+    text-decoration: none;
 }
 

@@ -5,6 +5,7 @@ var outputDiv = document.querySelector(".output-div");
 var errorMessageDiv = document.querySelector("#error-message");
 
 btnCheck.addEventListener("click", clickHandler);
+outputDiv.style.display = "none";
 
 function clickHandler(){
     var dateOfBirth = birthDate.value;
@@ -21,10 +22,10 @@ function clickHandler(){
         var dateSum = calculateDateSum(dateString);
 
         if(dateSum % luckyNo === 0){
-           outputDiv.innerText = "Yay ! your birthday is a lucky number";
+           outputDiv.innerText = "Yay ! your birthday is a lucky number 🥳";
         }
         else{
-            outputDiv.innerText = "Oops, your birthday isn't a lucky number";
+            outputDiv.innerText = "Oops, your birthday isn't a lucky number 🙁";
         }
     } 
 }    
@@ -40,5 +41,5 @@ function calculateDateSum(dateString){
 function errorMessage(text){
     errorMessageDiv.style.display = "block";
     errorMessageDiv.innerText = text;
-    outputDiv.style.display = "none";
+   
 }
